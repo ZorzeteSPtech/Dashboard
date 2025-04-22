@@ -13,18 +13,11 @@ body{
 
 }
 
-.alertas{
 
-    font-size: 15px;
-
-}
 
 .sensores{
 
-    display: flex;
-    justify-content: center;
-    max-height: 150px;
-    width: auto;
+    max-height: 100px;
 
 }
 

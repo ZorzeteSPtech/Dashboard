@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="dashboard">
-          <div class="sensores"> <canvas id="Sensor"></canvas> <h2 class="alertas">Dias sem alerta: 0</h2></div>
+          <div class="sensores"> <canvas id="Sensor"></canvas> </div>
           <h1>Dashboard</h1>
             <div class="switch">
               <button id="btn-geral" class="abaAtiva" onclick="mostrarAba('geral')">Visão Geral</button>
@@ -118,27 +118,6 @@
     const ctx_Temp = document.getElementById('Temperatura');
     const ctx_Umi = document.getElementById('Umidade');
     const ctx_Sen = document.getElementById('Sensor')
-
-      new Chart(ctx_Sen, {
-      type: 'doughnut',
-      data: {
-      labels: [
-        'Manutençãao',
-        'Funcionando',
-        'Configurar'
-      ],
-      datasets: [{
-        label: 'My First Dataset',
-        data: [0, 100, 0],
-        backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
-        ],
-        hoverOffset: 4
-      }]
-    },
-    });
 
   
     new Chart(ctx_Temp, {
